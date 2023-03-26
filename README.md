@@ -291,13 +291,13 @@ cd packer-templates || exit
   ## Windows Server 2022
   export NAME="windows-server-2022-standard-x64-eval"
   export WINDOWS_VERSION="2022"
-  export ISO_URL="https://software-download.microsoft.com/download/sg/20348.169.210806-2348.fe_release_svc_refresh_SERVER_EVAL_x64FRE_en-us.iso"
+  export ISO_URL="https://software-static.download.prss.microsoft.com/sg/download/888969d5-f34g-4e03-ac9d-1f9786c66749/SERVER_EVAL_x64FRE_en-us.iso"
   packer build -only="qemu" windows.json
 
   ## Windows Server 2019
   export NAME="windows-server-2019-standard-x64-eval"
   export WINDOWS_VERSION="2019"
-  export ISO_URL="https://software-download.microsoft.com/download/pr/17763.737.190906-2324.rs5_release_svc_refresh_SERVER_EVAL_x64FRE_en-us_1.iso"
+  export ISO_URL="https://software-static.download.prss.microsoft.com/dbazure/988969d5-f34g-4e03-ac9d-1f9786c66749/17763.3650.221105-1748.rs5_release_svc_refresh_SERVER_EVAL_x64FRE_en-us.iso"
   packer build -only="qemu" windows.json
 
   ## Windows Server 2016
@@ -310,7 +310,7 @@ cd packer-templates || exit
   export NAME="windows-10-enterprise-x64-eval"
   export WINDOWS_VERSION="10"
   export VIRTIO_WIN_ISO_DIR="/var/tmp/virtio-win"
-  export ISO_URL="https://software-download.microsoft.com/download/sg/444969d5-f34g-4e03-ac9d-1f9786c69161/19044.1288.211006-0501.21h2_release_svc_refresh_CLIENTENTERPRISEEVAL_OEMRET_x64FRE_en-us.iso"
+  export ISO_URL="https://software-static.download.prss.microsoft.com/dbazure/988969d5-f34g-4e03-ac9d-1f9786c66750/19045.2006.220908-0225.22h2_release_svc_refresh_CLIENTENTERPRISEEVAL_OEMRET_x64FRE_en-us.iso"
   export PACKER_IMAGES_OUTPUT_DIR="/var/tmp/"
   packer build -only="qemu" windows.json
 
@@ -318,7 +318,7 @@ cd packer-templates || exit
   export NAME="my_windows-10-enterprise-x64-eval"
   export WINDOWS_VERSION="10"
   export VIRTIO_WIN_ISO_DIR="/var/tmp/virtio-win"
-  export ISO_URL="https://software-download.microsoft.com/download/sg/444969d5-f34g-4e03-ac9d-1f9786c69161/19044.1288.211006-0501.21h2_release_svc_refresh_CLIENTENTERPRISEEVAL_OEMRET_x64FRE_en-us.iso"
+  export ISO_URL="https://software-static.download.prss.microsoft.com/dbazure/988969d5-f34g-4e03-ac9d-1f9786c66750/19045.2006.220908-0225.22h2_release_svc_refresh_CLIENTENTERPRISEEVAL_OEMRET_x64FRE_en-us.iso"
   export PACKER_IMAGES_OUTPUT_DIR="/var/tmp/"
   packer build -only="qemu" my_windows.json
   ```
